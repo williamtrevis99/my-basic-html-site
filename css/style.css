@@ -37,6 +37,16 @@ header {
     padding: 0px 20px;
 }
 
+.main_body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    padding: 13% 0;
+}
+
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
