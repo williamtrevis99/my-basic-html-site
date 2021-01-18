@@ -10,14 +10,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
     background-color: var(--secondary-color);
 }
 
 li, a, button {
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: whitesmoke;
     text-decoration: none;
  }
 
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 24px 10%;
 }
 
 .nav_links {
@@ -37,14 +37,41 @@ header {
     padding: 0px 20px;
 }
 
-.main_body {
-    font-family: "Montserrat", sans-serif;
+.parent {
+    display: flex;
+    flex-direction: column;
     font-weight: 500;
-    font-size: 50px;
-    color: whitesmoke;
+    font-size: 10vw;
+}
+
+.landing_page{
+    display: flex;
     text-decoration: none;
     text-align: center;
-    padding: 13% 0;
+    background-color: var(--secondary-color);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_page{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    background-color: #17BEBB;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.rocket_page{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    background-color: #CD5334;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav_links li a {
