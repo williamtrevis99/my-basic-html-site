@@ -28,6 +28,10 @@ header {
     padding: 24px 10%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav_links {
     list-style: none;
 }
@@ -37,44 +41,50 @@ header {
     padding: 0px 20px;
 }
 
-.parent {
+section {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
-    font-size: 10vw;
+    height: 100vh;
+    justify-content: center;
+    font-size: 4vw;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main_footer {
+    background-color: #17BEBB;
+    font-size: 2vw;
+    min-font-size: 1vw;
+
 }
 
 .landing_page{
-    display: flex;
-    text-decoration: none;
-    text-align: center;
     background-color: var(--secondary-color);
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
 .about_page{
-    display: flex;
-    text-decoration: none;
-    text-align: center;
     background-color: #17BEBB;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
 .rocket_page{
-    display: flex;
-    text-decoration: none;
-    text-align: center;
     background-color: #CD5334;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
 }
 
 .nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.landing_page {
     transition: all 0.3s ease 0s;
 }
 
