@@ -45,11 +45,8 @@ section {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
     font-size: 4vw;
-    align-items: center;
     text-decoration: none;
-    text-align: center;
 }
 
 footer {
@@ -68,6 +65,19 @@ footer {
 
 }
 
+.main_text {
+    font-size: 4vw;
+    min-font-size: 75;
+    padding: 15vh 15vh 0px;
+    text-decoration: #17BEBB;
+    color: #17BEBB;
+}
+
+.bottom_text {
+    font-size: 3vw;
+    padding: 10vh 15vh 0px;
+}
+
 .landing_page{
     background-color: var(--secondary-color);
 }
@@ -76,8 +86,29 @@ footer {
     background-color: #17BEBB;
 }
 
-.rocket_page{
-    background-color: #CD5334;
+.rocket_page {
+    background-color: var(--secondary-color);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex_card_item_base {
+    display: flex;
+    height: 250px;
+    width: 400px;
+    background-color: blue;
+    margin: 20px;
+    border-radius: 20px;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex_card_item_base:hover  {
+    background-color: green;
 }
 
 .nav_links li a {
