@@ -2,43 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <title>my-basic-html-site</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="static/rocket.png">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="static/rocket.png" rel="icon">
+    <script src="js/scripts.js"></script>
     <title>Home</title>
 </head>
-<body id="page-top">
+<body class="main-container">
     <header>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#1">Home</a></li>
-                <li><a href="#2">About</a></li>
-                <li><a href="#3">Projects</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#4"><button>Contact</button></a>
+        <h1>💻 = William H Trevis</h1>
+        <h2>Hi, i'm a Computer Science student from the UK.</h2>
     </header>
-<div>
-    <section class="landing_page" id="1">
-        <h1 class="main_text">Hi, I'm Will</h1>
-        <p class="bottom_text">I'm a software engineer intern at Boeing, currently studying Computer Science.</p>
+    <section>
+        <p>
+            I'm 21 years old, I am in my third year of university, where I study Computer Science.
+            I am currently a software engineering intern at Boeing. I will be returning to University in
+            September to complete my final year.
+        </p>
     </section>
-    <section class="about_page" id="2">I'm a Software Engineer at Boeing</section>
-    <section class="rocket_page"id="3">
-        <div class="flex_card_item_base">1</div>
-        <div class="flex_card_item_base">2</div>
-        <div class="flex_card_item_base">3</div>
-        <div class="flex_card_item_base">4</div>
-        <div class="flex_card_item_base">5</div>
-        <div class="flex_card_item_base">6</div>
-    </section>
-</div>
-<footer class="main_footer" id="4">
-    email: williamtrevis99@gmail.com      -      phone: 0196492849
-</footer>
+    <main>
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <a>Insitu (Software Engineer) - On my year long internship at Boeing, I first worked at a Boeing owned company
+                    called <a href="https://www.insitu.com/">Insitu</a> where I helped develop a live stream based front-end application, and also maintained and improved the test infastructure.
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a>Boeing (Software Engineer) - Currently I work in a small team which develops complementary software for the P8 and Apache Helicopter. In this team I work on database management, frontend development, and backend
+                        Java services.
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>University Modules</h2>
 
+            <table>
+                <tr>
+                    <th>Artificial Intelligence</th>
+                    <th>Mathematics for Computer Science</th>
+                    <th>Computer Architecture</th>
+                </tr>
+                <tr>
+                    <th>Compilers</th>
+                    <th>Databases</th>
+                    <th>Neural Networks</th>
+                </tr>
+                <tr>
+                    <th>Statistics</th>
+                    <th>Operating Systems</th>
+                    <th>Linear Algebra</th>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>C</p>
+            <div class="skills-container">
+                <div class="skills c">90%</div>
+            </div>
 
+            <p>Java</p>
+            <div class="skills-container">
+                <div class="skills java">85%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="skills-container">
+                <div class="skills js">85%</div>
+            </div>
+
+            <p>Python</p>
+            <div class="skills-container">
+                <div class="skills python">70%</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <h3 onclick=""><a class="git-button" href="https://github.com/williamtrevis99">GitHub</a>
+            </h3>
+            <h3 class="email-button" id="my-button" onclick="copyTextFromElement()">williamtrevis99@gmail.com
+            </h3>
+        </div>
+    </footer>
 </body>
 </html>
