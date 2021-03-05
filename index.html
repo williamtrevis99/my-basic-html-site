@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <title>my-basic-html-site</title>
+    <title>wht-home</title>
     <link href="css/style.css" rel="stylesheet"/>
     <link href="static/rocket.png" rel="icon">
     <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/2f85418fe6.js" crossorigin="anonymous"></script>
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
+
     <title>Home</title>
 </head>
 <body class="main-container">
     <header>
-        <h1>💻 = William H Trevis</h1>
-        <h2>Hi, i'm a Computer Science student from the UK.</h2>
+        <h1 class="logo" id="my-logo">will trevis</h1>
+            <div class="header-container">
+                <a href="https://github.com/williamtrevis99" target="_blank" class="icon">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+                <a email="williamtrevis99@gmail.com" class="icon" id="button-one">
+                    <i class="fas fa-envelope-open-text fa-2x">
+                    </i>
+                </a>
+            </div>
     </header>
     <section>
+        <h2>Hi, i'm a Computer Science student from the UK.</h2>
         <p>
             I'm 21 years old, I am in my third year of university, where I study Computer Science.
             I am currently a software engineering intern at Boeing. I will be returning to University in
@@ -84,12 +96,7 @@
         </section>
     </main>
     <footer>
-        <div class="footer-container">
-            <h3 onclick=""><a class="git-button" href="https://github.com/williamtrevis99">GitHub</a>
-            </h3>
-            <h3 class="email-button" id="my-button" onclick="copyTextFromElement()">williamtrevis99@gmail.com
-            </h3>
-        </div>
+        <p>@2020 - by william h trevis</p>
     </footer>
 </body>
 </html>

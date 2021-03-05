@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
 
+/****** generic classes *********/
+
+* {
+    box-sizing:border-box
+}
+
+h1 {
+    font-size: 3rem;
+}
+.logo {
+    align-self: flex-start;
+    margin: 0 auto 0 0;
+}
+
+header {
+    display: flex;
+    width: inherit;
+    margin: 5px 0 30px 0 ;
+}
+
+footer {
+    margin-top: 30px;
+}
+
 table {
     border-spacing: 10px;
     align-content: center;
@@ -20,43 +44,17 @@ p {
     font-weight: 400;
 }
 
-.main-container {
-    width: 100%;
-    height: fit-content;
-    background: #f9f9f9;
-    display: block;
-    margin: 20px auto 0;
-    padding: 18px;
-    max-width: 47rem;
-    font-family: 'Titillium Web', sans-serif;
-}
+/****** header content *********/
 
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
-/* Container for skill bars */
-.skills-container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-    margin: 0;
-}
-
-.skills {
-    text-align: right; /* Right-align text */
-    color: white; /* White text color */
-    padding-right: 5px;
-}
-
-.c {width: 90%; background-color: #4CAF50;} /* Green */
-.java {width: 85%; background-color: #2196F3;} /* Blue */
-.js {width: 85%; background-color: #f44336;} /* Red */
-.python {width: 70%; background-color: #808080;} /* Dark Grey */
-
-.footer-container {
-    margin: 25px;
+.header-container {
+    margin: 0 0 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: fit-content;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
 }
 
 .git-button {
@@ -77,3 +75,47 @@ p {
 .email-button:hover {
     color: blue;
 }
+
+.icon {
+    cursor: pointer;
+    color: black;
+    margin: 10px;
+}
+
+.icon:hover {
+    color: blue;
+}
+
+/****** main content *********/
+
+.main-container {
+    width: 100%;
+    height: fit-content;
+    background: #f9f9f9;
+    display: block;
+    margin: 10px auto 10px;
+    padding: 18px;
+    max-width: 44rem;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Container for skill bars */
+.skills-container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    margin: 0;
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    color: white; /* White text color */
+    padding-right: 5px;
+}
+
+.c { width: 90%; background-color: #4CAF50; } /* Green */
+.java { width: 85%; background-color: #2196F3; } /* Blue */
+.js { width: 85%; background-color: #f44336; } /* Red */
+.python { width: 70%; background-color: #808080; } /* Dark Grey */
+
+/****** footer *********/
+

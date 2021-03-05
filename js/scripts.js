@@ -1,7 +1,8 @@
-//If you want to copyText from Element
+import anime from "animejs";
+
 function copyTextFromElement(elementID) {
     let element = document.getElementById('my-button'); //select the element
-    let elementText = element.textContent; //get the text content from the element
+    let elementText = element.email; //get the text content from the element
     copyText(elementText); //use the copyText function below
 }
 
@@ -9,4 +10,24 @@ function copyTextFromElement(elementID) {
 // and pass the string to copied as the argument.
 function copyText(text) {
     navigator.clipboard.writeText(text);
+}
+
+
+function animateHeader() {
+    anime({
+        /* animation details here*/
+        target: "#logo",
+        //Properties
+        rotateY: 360,
+        scale: 0.5,
+        translateX: 300,
+        skew: 60,
+        // Property Parameters
+        duration: 1000,
+        endDelay: 300,
+        easing: "easeInOutSine",
+        // Animation Parameters
+        direction: 'alternate',
+        loop: true,
+    });
 }
