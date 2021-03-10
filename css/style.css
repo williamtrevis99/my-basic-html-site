@@ -6,9 +6,15 @@
     box-sizing:border-box
 }
 
+body {
+    animation: w70 1s;
+}
+
 h1 {
+    opacity: inherit;
     font-size: 3rem;
 }
+
 .logo {
     align-self: flex-start;
     margin: 0 auto 0 0;
@@ -34,10 +40,12 @@ th {
     border: 1px solid grey;
     border-radius: 4px;
     padding: 10px;
+    transition: 0.4s;
 }
 
 th:hover {
     background: #ddd;
+    transform: scale(0.99);
 }
 
 p {
@@ -63,27 +71,22 @@ p {
     cursor: pointer;
 }
 
-.git-button:hover {
-    color: blue;
-}
-
-
 .email-button {
-    cursor: pointer;
-}
+    transition: all 0.5s ease 0s;
 
-.email-button:hover {
-    color: blue;
+    cursor: pointer;
 }
 
 .icon {
     cursor: pointer;
     color: black;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
+    transition: 0.4s;
 }
 
 .icon:hover {
     color: blue;
+    transform: rotate(10deg);
 }
 
 /****** main content *********/
@@ -91,7 +94,7 @@ p {
 .main-container {
     width: 100%;
     height: fit-content;
-    background: #f9f9f9;
+    background: white;
     display: block;
     margin: 10px auto 10px;
     padding: 18px;
@@ -119,3 +122,13 @@ p {
 
 /****** footer *********/
 
+@keyframes w70 {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
