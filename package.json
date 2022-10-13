@@ -1,7 +1,0 @@
-{
-  "name": "my-basic-html-site",
-  "version": "1.0.0",
-  "dependencies": {
-    "animejs": "^3.2.1"
-  }
-}

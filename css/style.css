@@ -115,10 +115,11 @@ p {
     padding-right: 5px;
 }
 
-.c { width: 90%; background-color: #4CAF50; } /* Green */
-.java { width: 85%; background-color: #2196F3; } /* Blue */
-.js { width: 85%; background-color: #f44336; } /* Red */
-.python { width: 70%; background-color: #808080; } /* Dark Grey */
+.c { width: 70%; background-color: #4CAF50; } /* Green */
+.java { width: 65%; background-color: #2196F3; } /* Blue */
+.js { width: 90%; background-color: #f44336; } /* Red */
+.python { width: 70%; background-color: #da10b5; } /* Dark Grey */
+.ts { width: 86%; background-color: #00d5dd; } /* Dark Grey */
 
 /****** footer *********/
 
